@@ -308,15 +308,14 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* Слайд */
 .slick-slide {
-  margin: 0px;
-  display: block;
+  margin: 0 auto;
 }
 
 /* Слайд активный (показывается) */
@@ -326,125 +325,91 @@ li {
 /* Стрелка */
 .slick-arrow {
   position: absolute;
+  z-index: 100;
   top: 50%;
-  z-index: 10;
   font-size: 0px;
-  width: 50px;
-  height: 100px;
-  margin-top: -20px;
-  opacity: 0.6;
-}
-
-@media (max-width: 1018px) {
-  .slick-arrow {
-    width: 35px;
-    height: 35px;
-  }
 }
 
 /* Стрелка влево */
 .slick-arrow.slick-prev {
-  left: 0;
-  margin-left: -60px;
-  background: url(../img/slide-left.png) 0 0 no-repeat;
-  background-size: 100%;
-}
-
-@media (max-width: 1018px) {
-  .slick-arrow.slick-prev {
-    margin-left: -30px;
-  }
+  background: url(../img/main/slider/slider_arrow_left.png) no-repeat center;
+  background-size: cover;
+  width: 12px;
+  height: 22px;
+  left: 22px;
 }
 
 /* Стрелка вправо */
 .slick-arrow.slick-next {
-  right: 0;
-  margin-right: -60px;
-  background: url(../img/slide-right.png) 0 0 no-repeat;
-  background-size: 100%;
-}
-
-@media (max-width: 1018px) {
-  .slick-arrow.slick-next {
-    margin-right: -30px;
-  }
+  background: url(../img/main/slider/slider_arrow_right.png) no-repeat center;
+  background-size: cover;
+  width: 12px;
+  height: 22px;
+  right: 22px;
 }
 
 /* Стрелка не активная */
 /* Точки (булиты) */
-.slick-dots {
+/* Активная точка */
+/* Элемент точки */
+.slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+
+.slider__kuk {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.slick-dots li {
-  list-style: none;
-}
-
-/* Элемент точки */
-.slick-dots li button {
-  font-size: 0;
-  content: "";
-  display: block;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  margin-right: 10px;
-  background-color: #ecded5;
-}
-
-/* Активная точка */
-.slick-dots li.slick-active {
-  opacity: 0.5;
-}
-
-.slider__item {
+  max-width: 1022px;
   margin: 0 auto;
+  padding: 70px 0px;
 }
 
-.slider__pos {
-  background-color: #ecded5;
-  margin: 20px auto;
-  max-width: 260px;
-  padding: 20px 10px 20px 10px;
-  display: block;
-  height: 330px;
-  border-radius: 15px;
-  -webkit-transition: margin-top 0.1s linear;
-  transition: margin-top 0.1s linear;
+.slider__img {
+  padding: 42px 42px;
+  border: 3px solid #95e1d3;
 }
 
-.slider__pos:hover {
-  margin-top: 10px;
+.slider__img img {
+  width: 63px;
+  height: 61px;
 }
 
-@media (max-width: 1035px) {
-  .slider__pos {
-    max-width: 170px;
-    height: 230px;
-  }
+.slider__info {
+  margin-left: 64px;
 }
 
 .slider__text {
-  color: #fff;
-  max-width: 250px;
-  text-align: center;
-  margin: 20px auto 0px;
-  font-size: 20px;
-  color: #000;
+  font-family: Roboto;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 300;
+  font-style: italic;
+  color: #999999;
+  margin-bottom: 20px;
 }
 
-@media (max-width: 1035px) {
-  .slider__text {
-    font-size: 16px;
-  }
+.slider__name {
+  font-family: "Kaushan Script";
+  font-size: 24px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.slider__name:before {
+  content: "";
+  display: inline-block;
+  width: 60px;
+  height: 3px;
+  background-color: #f38181;
+  margin-right: 10px;
+  position: relative;
+  top: -5px;
 }
 
 .intro {
@@ -733,6 +698,10 @@ li {
   margin-bottom: 10px;
 }
 
+.service-opener__punct:last-child {
+  margin-bottom: 0;
+}
+
 .service-opener__header {
   padding: 15px 20px 15px 15px;
   display: -webkit-box;
@@ -745,6 +714,7 @@ li {
       -ms-flex-align: center;
           align-items: center;
   border: 1px solid #e5e5e5;
+  cursor: pointer;
 }
 
 .service-opener__left {
@@ -786,4 +756,9 @@ li {
 
 .service-opener__inform-active {
   display: block;
+}
+
+.comments {
+  background-color: #f8f8f8;
+  margin-top: 120px;
 }

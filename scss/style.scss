@@ -60,6 +60,7 @@
         }
     }
 }
+
 .intro-card {
     flex: 0 0 31.66%;
     background-color: #95e1d3;
@@ -277,6 +278,9 @@
 
     &__punct {
         margin-bottom: 10px;
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 
     // .service-opener__header
@@ -287,6 +291,7 @@
         justify-content: space-between;
         align-items: center;
         border: 1px solid #e5e5e5;
+        cursor: pointer;
     }
 
     &__left {
@@ -328,4 +333,9 @@
             display: block;
         }
     }
+}
+
+.comments {
+    background-color: #f8f8f8;
+    margin-top: 120px;
 }

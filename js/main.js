@@ -1,32 +1,16 @@
 
 //СЛИК_СЛАЙДЕР
-/*$(document).ready(function () {
+$(document).ready(function () {
     $('.slider').slick({
-        dots: true,
-        slidesToShow: 3,
+
+        slidesToShow: 1,
         speed: 800,
-        autoplay: true,
-        autoplaySpeed: 3000,
         responsive: [
-            {
-                breakpoint: 810,
-                settings: {
-                    slidesToShow: 2,
-
-                }
-            },
-            {
-                breakpoint: 500,
-                settings: {
-                    slidesToShow: 1,
-
-                }
-            }
 
         ]
     });
 
-});*/
+});
 
 
 //Меню-бургер
@@ -78,6 +62,21 @@ function ibg() {
         }
     }
 }
-
 ibg()
 
+const ServiceHeader = document.querySelectorAll('.service-opener__header');
+ServiceHeader.forEach(header => {
+    header.addEventListener('click', () => {
+
+        if (header.nextElementSibling.classList.contains("service-opener__inform-active")) {
+            header.nextElementSibling.classList.remove("service-opener__inform-active")
+        } else {
+            const Forms = document.querySelectorAll('.service-opener__inform');
+            Forms.forEach(item => {
+                item.classList.remove('service-opener__inform-active')
+            })
+            header.nextElementSibling.classList.toggle('service-opener__inform-active')
+        }
+
+    })
+})
