@@ -42,7 +42,7 @@ if (iconHeader) {
 
 
 //Скролл к цели
-/*const menuLinks = document.querySelector('.header__nav');
+const menuLinks = document.querySelector('.header-up');
 menuLinks.addEventListener("click", onMenuLinkClick);
 
 function onMenuLinkClick(e) {
@@ -50,13 +50,13 @@ function onMenuLinkClick(e) {
     console.log(menuLink);
     if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
         const gotoBlock = document.querySelector(menuLink.dataset.goto);
-        const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight;
+        const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset;
 
-        if (iconHeader.classList.contains("header__icon_active")) {
+        /*if (iconHeader.classList.contains("header__icon_active")) {
             document.body.classList.remove('lock');
             iconHeader.classList.remove('header__icon_active');
             headerNav.classList.remove('header__nav_active');
-        }
+        }*/
 
         window.scrollTo({
             top: gotoBlockValue,
@@ -64,8 +64,7 @@ function onMenuLinkClick(e) {
         });
         e.preventDefault();
     }
-}*/
-
+}
 
 
 

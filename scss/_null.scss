@@ -4,6 +4,9 @@
     padding: 0;
     margin: 0;
     border: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 * *:before,
@@ -95,14 +98,8 @@ $md3: 460px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    top: 0;
-    left: 0;
-    position: absolute;
+
     z-index: 10;
-    &:hover {
-        top: -10px;
-        left: -10px;
-    }
 }
 
 .ibg > img {
