@@ -4,65 +4,134 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="assects\css\style.css">
+    <link rel="stylesheet" href="css\style.css">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap"
         rel="stylesheet">
     <title>Mogo</title>
 </head>
 
 <body>
-
-
     <header class="header">
         <div class="container">
-            <div class="header__inner">
-                <div class="header__logo">MoGo</div>
-
-                <nav class="nav">
-                    <a class="nav__link" href="#">About</a>
-                    <a class="nav__link" href="#">Service</a>
-                    <a class="nav__link" href="#">Blog</a>
-                    <a class="nav__link" href="#">Work</a>
-                    <a class="nav__link" href="#">Contact</a>
+            <div class="header-up">
+                <div class="header-up__logo">
+                    MoGo
+                </div>
+                <nav class="header-up__nav">
+                    <ul class="header-up__list">
+                        <li>About</li>
+                        <li>Service</li>
+                        <li>Work</li>
+                        <li>Blog</li>
+                        <li>Contact</li>
+                    </ul>
+                    <div class="header-up__icons">
+                        <a href="" class="header-up__icon"><img src="img/header/cart.png" alt="cart"></a>
+                        <a href="" class="header-up__icon"><img src="img/header/search_icon.png" alt="search"></a>
+                    </div>
                 </nav>
+            </div>
+            <div class="header-middle">
+                <div class="header-middle__subtitle">Creative Template</div>
+                <div class="header-middle__title">Welcome to MoGo</div>
+                <div class="header-middle__link">
+                    <a href="">Learn more</a>
+                </div>
+            </div>
+
+            <div class="header-down">
+                <div class="header-down__column">
+                    <span>01</span> Intro
+                </div>
+                <div class="header-down__column">
+                    <span>02</span> Work
+                </div>
+                <div class="header-down__column">
+                    <span>03</span> About
+                </div>
+                <div class="header-down__column">
+                    <span>04</span> Contacts
+                </div>
             </div>
         </div>
     </header>
 
-
-    <div class="intro">
-        <div class="container">
-            <div class="intro__inner">
-                <h2 class="intro__suptitle">Creative Template</h2>
-                <h1 class="intro__title">Welcome to MoGo</h1>
-                <a class="btn" href="#">Learn More</a>
+    <main>
+        <div class="intro">
+            <div class="container">
+                <div class="titles">
+                    <div class="titles__subtitle">
+                        What we do
+                    </div>
+                    <div class="titles__title">
+                        Story about us
+                    </div>
+                </div>
+                <div class="intro__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.
+                </div>
+                <div class="intro__cards">
+                    <div class="intro-card">
+                        <div class="intro-card__img ibg">
+                            <img src="img/main/intro/intro_card1.png" alt="">
+                            <div class="intro-card__up">
+                                <img src="img/main/intro/card_users.png" alt="" class="intro-card__icon">
+                                <div class="intro-card__title">Super team</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="intro-card">
+                        <div class="intro-card__img ibg">
+                            <img src="img/main/intro/intro_card2.png" alt="">
+                            <div class="intro-card__up">
+                                <img src="img/main/intro/card_users.png" alt="" class="intro-card__icon">
+                                <div class="intro-card__title">Super team</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="intro-card">
+                        <div class="intro-card__img ibg">
+                            <img src="img/main/intro/intro_card3.png" alt="">
+                            <div class="intro-card__up">
+                                <img src="img/main/intro/card_users.png" alt="" class="intro-card__icon">
+                                <div class="intro-card__title">Super team</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="intro-footer">
+                <div class="container">
+                    <div class="intro-footer__row">
+                        <div class="intro-footer__column">
+                            <div class="intro-footer__num">42</div>
+                            <div class="intro-footer__txt">Web Design Projects</div>
+                        </div>
+                        <div class="intro-footer__column">
+                            <div class="intro-footer__num">123</div>
+                            <div class="intro-footer__txt">happy client</div>
+                        </div>
+                        <div class="intro-footer__column">
+                            <div class="intro-footer__num">15</div>
+                            <div class="intro-footer__txt">award winner</div>
+                        </div>
+                        <div class="intro-footer__column">
+                            <div class="intro-footer__num">99</div>
+                            <div class="intro-footer__txt">cup of coffee</div>
+                        </div>
+                        <div class="intro-footer__column">
+                            <div class="intro-footer__num">24</div>
+                            <div class="intro-footer__txt">members</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
 
-    <div class="slider">
-        <div class="container">
-            <div class="slider_inner">
-                <div class="slider_item active">
-                    <span>01</span>
-                    Intro
-                </div>
-                <div class="slider_item">
-                    <span>02</span>
-                    Work
-                </div>
-                <div class="slider_item">
-                    <span>03</span>
-                    About
-                </div>
-                <div class="slider_item">
-                    <span>04</span>
-                    Contacts
-                </div>
-            </div>
-        </div>
-    </div>
-
+    <script src="js/main.js"></script>
 
 </body>
 
