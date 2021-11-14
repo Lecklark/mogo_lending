@@ -479,6 +479,10 @@ li {
   position: relative;
 }
 
+.intro-card-team {
+  height: 470px;
+}
+
 .intro-card__img {
   top: 0;
   left: 0;
@@ -501,6 +505,19 @@ li {
   left: 0;
   position: absolute;
   z-index: 20;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, 0.89)), to(rgba(243, 129, 129, 0.89)));
   background-image: linear-gradient(0deg, rgba(252, 227, 138, 0.89) 0%, rgba(243, 129, 129, 0.89) 100%);
 }
@@ -509,18 +526,25 @@ li {
   opacity: 1;
 }
 
-.intro-card__icon {
-  margin: 104px auto 10px;
-  display: block;
+.intro-card__up > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .intro-card__title {
-  text-align: center;
   font-family: Montserrat;
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
+  margin-top: 10px;
 }
 
 .intro-footer {
@@ -761,4 +785,41 @@ li {
 .comments {
   background-color: #f8f8f8;
   margin-top: 120px;
+  margin-bottom: 100px;
+}
+
+.team {
+  font-size: 0;
+}
+
+.team__links {
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  background-color: #fce38a;
+  margin: 0;
+  border-right: 1px solid #f38181;
+}
+
+.team__links:last-child {
+  border-right: 0px;
+}
+
+.team__links div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.team__links:hover {
+  opacity: 0.5;
+  background-color: #f38181;
 }
