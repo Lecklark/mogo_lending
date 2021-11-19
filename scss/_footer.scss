@@ -1,0 +1,202 @@
+.footer {
+    // .footer__row
+    padding-top: 75px;
+    padding-bottom: 70px;
+    background-color: #f8f8f8;
+    &__row {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+}
+
+.footer-left {
+    // .footer-left__title
+    flex: 0 0 40%;
+
+    &__title {
+        font-family: Montserrat;
+        font-size: 46px;
+        font-weight: 700;
+        color: #cccccc;
+        margin-bottom: 35px;
+    }
+
+    // .footer-left__text
+
+    &__text {
+        font-family: Roboto;
+        font-size: 15px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #999999;
+        margin-bottom: 35px;
+    }
+
+    // .footer-left__folcount
+
+    &__folcount {
+        font-family: Montserrat;
+        color: #333333;
+        font-size: 14px;
+        font-weight: 400;
+        & span {
+            font-size: 18px;
+            font-weight: 700;
+        }
+        &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: #e5e5e5;
+            margin: 20px 0px;
+        }
+    }
+
+    // .footer-left__socials
+
+    &__socials {
+        display: flex;
+        align-items: center;
+        margin-bottom: 44px;
+        & > div {
+            font-family: Roboto;
+            font-size: 15px;
+            font-weight: 300;
+            font-style: italic;
+            color: #999999;
+        }
+        & a {
+            display: block;
+            margin-left: 20px;
+        }
+    }
+
+    // .footer-left__email
+
+    &__email {
+        font-size: 0px;
+        & input {
+            border: 1px solid #e7e7e7;
+            height: 40px;
+            padding-left: 10px;
+            font-family: Roboto;
+            font-size: 15px;
+            font-weight: 300;
+            font-style: italic;
+            color: #cccccc;
+            width: 230px;
+        }
+        & button {
+            height: 40px;
+            font-family: Montserrat;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #ffffff;
+            background-color: #95e1d3;
+            padding: 0 35px;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}
+.footer-middle {
+    // .footer-middle__title
+    flex: 0 0 29.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__title {
+        font-family: Montserrat;
+        text-transform: uppercase;
+        color: #333333;
+
+        position: relative;
+        font-weight: 700;
+        top: 10px;
+    }
+
+    // .footer-middle__cards
+
+    &__cards {
+    }
+}
+.footer-card {
+    // .footer-card__img
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    &__img {
+    }
+
+    // .footer-card__text
+
+    &__text {
+        margin-left: 20px;
+    }
+
+    // .footer-card__txt
+
+    &__txt {
+        font-family: Montserrat;
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #333333;
+        margin-bottom: 10px;
+    }
+
+    // .footer-card__date
+
+    &__date {
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 300;
+        font-style: italic;
+        color: #999999;
+    }
+}
+.footer-right {
+    // .footer-right__title
+    flex: 0 0 22.5%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+
+    &__title {
+        font-family: Montserrat;
+        text-transform: uppercase;
+        color: #333333;
+        font-weight: 700;
+        margin-bottom: 38px;
+    }
+
+    // .footer-right__insts
+
+    &__insts {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 27px;
+    }
+
+    // .footer-right__photo
+
+    &__photo {
+        flex: 0 0 33.33%;
+        margin-bottom: 2px;
+    }
+
+    // .footer-right__link
+
+    &__link {
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 300;
+        font-style: italic;
+        color: #333333;
+    }
+}
